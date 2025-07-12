@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPG: Resgate do Amuleto Perdido</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-header">
+        <h1>RPG: Resgate do Amuleto Perdido</h1>
+        <p class="game-description">
+          🌟 Você está em uma jornada épica em um mundo de fantasias! O reino das Sombras roubou o Amuleto do Destino e,
+          como o herói escolhido 🦸, sua missão é resgatá-lo!
+        </p>
+      </div>
+
+      <div class="maze-container">
+        <div id="maze"></div>
+      </div>
+
+      <div class="controls">
+        <button id="up" class="control-btn"><i class="fas fa-arrow-up"></i></button>
+        <div class="horizontal-controls">
+          <button id="left" class="control-btn"><i class="fas fa-arrow-left"></i></button>
+          <button id="right" class="control-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <button id="down" class="control-btn"><i class="fas fa-arrow-down"></i></button>
+        <button id="solve" class="solve-btn">Resolver Labirinto</button>
+      </div>
+
+      <div class="status-container">
+        <div id="status-message" class="status-message">Bem-vindo, herói! Encontre o caminho para o amuleto!</div>
+        <div id="move-counter" class="move-counter">Movimentos: 0</div>
+      </div>
+
+      <div class="legend">
+        <div class="legend-item"><span class="legend-icon hero-icon"></span> Herói</div>
+        <div class="legend-item"><span class="legend-icon path-icon"></span> Caminho</div>
+        <div class="legend-item"><span class="legend-icon tree-icon"></span> Árvore</div>
+        <div class="legend-item"><span class="legend-icon amulet-icon"></span> Amuleto</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

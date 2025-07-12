@@ -1,0 +1,215 @@
+/* Estilos gerais */
+body {
+  font-family: 'MedievalSharp', cursive;
+  background-color: #1a1a2e;
+  color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Alinha o container à esquerda */
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Container do jogo */
+.game-container {
+  width: 500px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(26, 26, 46, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid #4e4e6d;
+}
+
+.game-header h1 {
+  color: #f8bb44;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.game-description {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Labirinto */
+.maze-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#maze {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 5px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.path {
+  background-color: #4e6d4e;
+  border: 1px solid #6d8c6d;
+}
+
+.tree {
+  background-color: #2d4a2d;
+  border: 1px solid #3d5a3d;
+}
+
+.hero {
+  background-color: #4e4e6d;
+  border: 1px solid #6d6d8c;
+}
+
+.amulet {
+  background-color: #6d4e6d;
+  border: 1px solid #8c6d8c;
+}
+
+/* Controles */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.horizontal-controls {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 10px 0;
+}
+
+.control-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4e4e6d;
+  border: none;
+  color: #f8bb44;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-btn:hover {
+  background-color: #6d6d8c;
+  transform: scale(1.05);
+}
+
+.solve-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f8bb44;
+  border: none;
+  border-radius: 5px;
+  color: #1a1a2e;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.solve-btn:hover {
+  background-color: #ffd166;
+  transform: scale(1.05);
+}
+
+/* Status e mensagens */
+.status-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.status-message {
+  font-size: 18px;
+  color: #f8bb44;
+  margin-bottom: 10px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move-counter {
+  font-size: 16px;
+  color: #e6e6e6;
+}
+
+/* Legenda */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.legend-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.hero-icon {
+  background-color: #4e4e6d;
+  border: 1px solid #6d6d8c;
+}
+
+.path-icon {
+  background-color: #4e6d4e;
+  border: 1px solid #6d8c6d;
+}
+
+.tree-icon {
+  background-color: #2d4a2d;
+  border: 1px solid #3d5a3d;
+}
+
+.amulet-icon {
+  background-color: #6d4e6d;
+  border: 1px solid #8c6d8c;
+}
+
+/* Efeitos de vitória/derrota */
+.success {
+  color: #4ade80;
+  text-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+}
+
+.failure {
+  color: #f87171;
+  text-shadow: 0 0 5px rgba(248, 113, 113, 0.5);
+}
