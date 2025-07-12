@@ -39,13 +39,19 @@ Algoritmo de solução automática
 Efeitos visuais e sonoros imersivos
 
 📂 Estrutura de Arquivos
-text
+
 rpg-resgate-amuleto/
+
 ├── index.html        # Página principal do jogo
+
 ├── styles.css       # Estilos do jogo
+
 ├── script.js        # Lógica do jogo
+
 └── README.md        # Este arquivo
+
 🚀 Como Executar
+
 Clone este repositório ou faça o download dos arquivos
 
 Abra o arquivo index.html em qualquer navegador moderno
